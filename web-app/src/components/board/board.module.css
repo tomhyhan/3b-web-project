@@ -1,0 +1,102 @@
+.mainstyle {
+  display: flex;
+  align-items: center;
+  background-color: #43434b;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+}
+
+.headerTitle {
+  margin: 1rem;
+  color: #00a4ccff;
+}
+
+.main {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.logout {
+  color: white;
+  background-color: #43434b;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  outline: 0;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+.messageList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.myMessage {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.userName {
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.date {
+  color: grey;
+  font-size: 0.7rem;
+  margin: 0 0.2rem;
+  line-height: 1.7;
+  padding-top: 0.2rem;
+}
+
+.content {
+  color: whitesmoke;
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  width: 80%;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+}
+
+.inputBtn,
+.input {
+  padding: 1rem;
+  outline: 0;
+  border: 0;
+  color: #57585d;
+  font-size: 1.1rem;
+}
+
+.input {
+  background-color: #23272a;
+  flex-basis: 90%;
+  border-radius: 0;
+}
+
+.inputBtn {
+  background-color: #23272a;
+  cursor: pointer;
+  flex-basis: 10%;
+  border-radius: 0;
+}
+/* 
+  background-color: #00a4ccff;
+  background-color: #f95700ff
+   */

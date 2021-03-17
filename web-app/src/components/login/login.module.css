@@ -1,0 +1,34 @@
+.loginStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #00a4ccff;
+}
+
+.login {
+  color: white;
+  background-color: #f95700ff;
+  transform: translateY(-50%);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 0rem;
+}
+
+.button {
+  color: darkblue;
+  font-weight: bold;
+  margin-top: 1rem;
+  border: 0;
+  outline: 0;
+  background-color: aqua;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
