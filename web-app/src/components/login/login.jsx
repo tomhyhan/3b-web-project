@@ -24,7 +24,9 @@ const Login = ({ authProvider }) => {
   };
 
   useEffect(() => {
-    console.log('logged in !!');
+    authProvider.onAuthChange((user) => {
+      user && traverseToBoard(user);
+    });
   }, []);
 
   return (

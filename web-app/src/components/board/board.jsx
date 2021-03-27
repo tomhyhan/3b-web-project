@@ -62,8 +62,12 @@ const Board = ({ authProvider, database }) => {
         mounted && setuserId(user.uid);
         mounted && setuserName(user.displayName);
       } else {
-        history.push('/');
+        mounted && history.push('/');
       }
+
+      return () => {
+        mounted = false;
+      };
     });
   });
   return (
@@ -98,6 +102,7 @@ const Board = ({ authProvider, database }) => {
           })}
         </ul>
       </main>
+
       <form className={styles.form} ref={formRef} onSubmit={handleSubmit}>
         <input
           className={styles.input}
